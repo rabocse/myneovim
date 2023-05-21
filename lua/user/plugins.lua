@@ -83,6 +83,17 @@ use {
     end
 }
 
+-- File directory and web-dev icons
+use {
+  'nvim-tree/nvim-tree.lua',
+  requires = {
+  'nvim-tree/nvim-web-devicons', -- optional
+  },
+  config = function()
+  require("nvim-tree").setup {}
+  end
+ }
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
